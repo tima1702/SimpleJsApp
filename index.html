@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- -->
+        <meta charset="utf-8">
+        <script src="index.js"></script>
+        <script src="vanilla_tools.js"></script>
+        <style type="text/css">
+            .error{
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <div class="row">
+        <div class="col-md-4">
+            <select onchange="task2();" id="task2" class="form-control">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+        <button onclick="task3('Новый пункт','#task2')" class="btn btn-default">Новый пункт</button>
+        </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+        <div class="col-md-4">
+            <label>Дома:</label>
+            <select id="task5" onchange="task5_2()" class="form-control">
+            </select>
+            <br>
+            <label>Изменить название:</label>
+            <br>
+            <input type="text" id="homeName">
+            <button onclick="task5_3()" class="btn btn-default">Обновить</button>
+        </div>
+        </div>
+        </div>
+        <script>
+            task5_1();
+            task5_2();
+        </script>
+    </body>
+</html>
